@@ -26,21 +26,29 @@ void loop() {
       digitalWrite(redLED, HIGH);
       digitalWrite(blueLED, LOW);
       digitalWrite(greenLED, LOW);
+
+      delay(1000);
     } else if (receivedChar == 'B') {
       // Acendendo o LED azul
       digitalWrite(redLED, LOW);
       digitalWrite(blueLED, HIGH);
       digitalWrite(greenLED, LOW);
+
+      delay(1000);
     } else if (receivedChar == 'C') {
       // Acendendo o LED ciano (mistura de azul e verde)
       digitalWrite(redLED, LOW);
       digitalWrite(blueLED, HIGH);
       digitalWrite(greenLED, HIGH);
+
+      delay(1000);
     } else {
       // Desligando todos os LEDs se uma entrada inválida for recebida
       digitalWrite(redLED, LOW);
       digitalWrite(blueLED, LOW);
       digitalWrite(greenLED, LOW);
+
+      delay(1000);
     }
   }
 }
